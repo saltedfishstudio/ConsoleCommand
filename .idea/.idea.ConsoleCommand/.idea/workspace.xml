@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfe47996-1268-4f40-9846-f423a9dcc5b6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/fd/5dd96b12/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/ConsoleCommandAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/ReflectionRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Console.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/InternalClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/ConsoleCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/PublicClass.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/PrivateClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/InternalClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/ConsoleCommandAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ReflectionRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/PublicClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/ReflectionRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/ConsoleCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Console.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X3p1vBTluZESOHaLaxDmuxnrxe" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="ReflectionRunner.Run" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
+      <option name="EXE_PATH" value="C:\Program Files\JetBrains\JetBrains Rider 2019.3.1\lib\ReSharperHost\JetLauncherILc.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <option name="CLASS_NAME" value="ReflectionRunner" />
+      <option name="METHOD_NAME" value="Run" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13148">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="13148" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17700">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="17700" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Static Method.ReflectionRunner.Run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="2930" y="136" key="#ReflectionRunner.Run" timestamp="1580285212341">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state x="2930" y="136" key="#ReflectionRunner.Run/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580285212341" />
+    <state width="661" height="466" key="DebuggerActiveHint" timestamp="1580293777202">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="661" height="466" key="DebuggerActiveHint/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580293777202" />
+    <state width="2515" height="194" key="GridCell.Tab.0.bottom" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.0.bottom/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.0.center" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.0.center/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.0.left" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.0.left/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.0.right" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.0.right/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.1.bottom" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.1.bottom/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.1.center" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.1.center/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.1.left" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.1.left/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.1.right" timestamp="1580296942053">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.1.right/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942053" />
+    <state width="2515" height="194" key="GridCell.Tab.2.bottom" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.2.bottom/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.2.center" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.2.center/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.2.left" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.2.left/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.2.right" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.2.right/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.3.bottom" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.3.bottom/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.3.center" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.3.center/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.3.left" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.3.left/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+    <state width="2515" height="194" key="GridCell.Tab.3.right" timestamp="1580296942054">
+      <screen x="1920" y="-125" width="2560" height="1040" />
+    </state>
+    <state width="2515" height="194" key="GridCell.Tab.3.right/1920.-125.2560.1040/0.0.1920.1040@1920.-125.2560.1040" timestamp="1580296942054" />
+  </component>
+</project>
