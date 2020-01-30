@@ -1,4 +1,6 @@
-﻿namespace UnityEngine.Console
+﻿using UnityEngine;
+
+namespace Console.Command
 {
 	class Debugging
 	{

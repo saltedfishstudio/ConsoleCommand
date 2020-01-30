@@ -1018,8 +1018,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdcb9918ee94512bbc9c149eaef6d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_namespace: UnityEngine.Console
+  m_namespace: Console.Command
   inputField: {fileID: 1935569424}
+  cellPrefab: {fileID: 2040587616}
+  root: {fileID: 2013526370}
 --- !u!1 &1935569422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,8 +1299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 20
+    m_Right: 20
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 7
@@ -1377,7 +1379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: method name texts
 --- !u!222 &2040587617
 CanvasRenderer:
   m_ObjectHideFlags: 0
