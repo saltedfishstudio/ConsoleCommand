@@ -16,6 +16,9 @@ namespace SFStudio.ScriptConsole
 
 		readonly List<Text> cells = new List<Text>();
 		readonly Dictionary<string, MethodInfo> methods = new Dictionary<string, MethodInfo>();
+		readonly Dictionary<string, Type> methodOwnerMap = new Dictionary<string, Type>();
+
+		MethodInfo selected = default;
 		
 		void Awake()
 		{
@@ -32,11 +35,13 @@ namespace SFStudio.ScriptConsole
 				foreach (MethodInfo methodInfo in methodInfos)
 				{
 					methods[methodInfo.Name] = methodInfo;
+					methodOwnerMap[methodInfo.Name] = type;
 				}
 			}
 			
 			Debug.Log($"found method count: {methods.Count}");
 			inputField.onValueChanged.AddListener(OnValueChanged);
+			inputField.onEndEdit.AddListener(OnEndEdit);
 			cellPrefab.gameObject.SetActive(false);
 		}
 
@@ -69,6 +74,18 @@ namespace SFStudio.ScriptConsole
 				cell.text = method.Name;
 				cell.gameObject.SetActive(true);
 			}
+
+			selected = filtered.FirstOrDefault();
+		}
+
+		void OnEndEdit(string input)
+		{
+			Debug.Log($"OnEndEdit:{input}, {selected.Name}, {methodOwnerMap[selected.Name].Name}");
+			
+			object classInstance = Activator.CreateInstance(methodOwnerMap[selected.Name], null);
+			
+			// implement parameter input
+			selected.Invoke(classInstance, null);
 		}
 
 		Text GetCell(int index)
