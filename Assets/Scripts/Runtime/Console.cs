@@ -83,6 +83,12 @@ namespace SFStudio.ScriptConsole
 			Debug.Log($"OnEndEdit:{input}, {selected.Name}, {methodOwnerMap[selected.Name].Name}");
 			
 			object classInstance = Activator.CreateInstance(methodOwnerMap[selected.Name], null);
+
+			var parameters = selected.GetParameters();
+			foreach (ParameterInfo parameterInfo in parameters)
+			{
+				
+			}
 			
 			// implement parameter input
 			selected.Invoke(classInstance, null);
