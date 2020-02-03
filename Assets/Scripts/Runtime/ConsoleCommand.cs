@@ -15,6 +15,7 @@ namespace Console.Command
 		public static void SetMaxFPS(int fps = 60)
 		{
 			Application.targetFrameRate = fps;
+			Debug.Log($"Target frame rate is updated! FPS : {fps}");
 		}
 	}
 

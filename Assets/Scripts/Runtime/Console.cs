@@ -39,7 +39,6 @@ namespace SFStudio.ScriptConsole
 				}
 			}
 			
-			Debug.Log($"found method count: {methods.Count}");
 			inputField.onValueChanged.AddListener(OnValueChanged);
 			inputField.onEndEdit.AddListener(OnEndEdit);
 			cellPrefab.gameObject.SetActive(false);
@@ -48,15 +47,16 @@ namespace SFStudio.ScriptConsole
 		void OnValueChanged(string input)
 		{
 			MethodInfo[] filtered;
+			string methodNames = input.Split(' ').FirstOrDefault();
 
-			if (string.IsNullOrEmpty(input))
+			if (string.IsNullOrEmpty(methodNames))
 			{
 				filtered = new MethodInfo[0];
 			}
 			else
 			{
 				filtered = methods.Values
-					.Where(e => e.Name.ToLower().Contains(input.ToLower()))
+					.Where(e => e.Name.ToLower().Contains(methodNames.ToLower()))
 					.OrderBy(e => e.Name).ToArray();
 			}
 
@@ -80,18 +80,45 @@ namespace SFStudio.ScriptConsole
 
 		void OnEndEdit(string input)
 		{
-			Debug.Log($"OnEndEdit:{input}, {selected.Name}, {methodOwnerMap[selected.Name].Name}");
+			if (selected == null)
+				return;
 			
 			object classInstance = Activator.CreateInstance(methodOwnerMap[selected.Name], null);
 
-			var parameters = selected.GetParameters();
-			foreach (ParameterInfo parameterInfo in parameters)
+			string[] blocks = input.Split(' ');
+			int inputParameterCount = blocks.Length - 1;
+			ParameterInfo[] parameters = selected.GetParameters();
+
+			// compatible
+			if (inputParameterCount == parameters.Length)
 			{
-				
+				try
+				{
+					object[] convertedParameters = new object[inputParameterCount];
+					for (int i = 0; i < inputParameterCount; i++)
+					{
+						var parameter = parameters[i];
+						var inputValue = blocks[i + 1];
+
+						// convert to types
+						var converted = Convert.ChangeType(inputValue, parameter.ParameterType);
+						convertedParameters[i] = converted;
+					}
+
+					selected.Invoke(classInstance, convertedParameters);
+				}
+				catch (Exception e)
+				{
+					Debug.LogError(e);
+				}
 			}
-			
-			// implement parameter input
-			selected.Invoke(classInstance, null);
+			else
+			{
+				Debug.LogError("The number of parameter is not compatible.");
+			}
+
+			inputField.text = null;
+			inputField.Select();
 		}
 
 		Text GetCell(int index)
