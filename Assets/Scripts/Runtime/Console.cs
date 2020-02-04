@@ -44,6 +44,21 @@ namespace SFStudio.ScriptConsole
 			cellPrefab.gameObject.SetActive(false);
 		}
 
+		void Update()
+		{
+			if (inputField.isFocused)
+			{
+				if (Input.GetKeyDown(KeyCode.Tab))
+				{
+					if (selected != null)
+					{
+						inputField.text = selected.Name;
+						inputField.caretPosition = inputField.text.Length;
+					}
+				}
+			}
+		}
+
 		void OnValueChanged(string input)
 		{
 			MethodInfo[] filtered;
@@ -71,7 +86,22 @@ namespace SFStudio.ScriptConsole
 			{
 				var cell = GetCell(i);
 				var method = filtered[i];
-				cell.text = method.Name;
+
+				string displayText = $"{method.Name}(";
+				var parameters = method.GetParameters();
+				for (int index = 0; index < parameters.Length; index++)
+				{
+					var parameter = parameters[index];
+					displayText += $"{parameter.ParameterType.Name} {parameter.Name}";
+					if (index != parameters.Length - 1)
+					{
+						displayText += ", ";
+					}
+				}
+
+				displayText += ")";
+
+				cell.text = displayText;
 				cell.gameObject.SetActive(true);
 			}
 
