@@ -54,6 +54,8 @@ namespace SFStudio.ScriptConsole
 					{
 						inputField.text = selected.Name;
 						inputField.caretPosition = inputField.text.Length;
+						inputField.Select();
+						inputField.ActivateInputField();
 					}
 				}
 			}
@@ -149,7 +151,10 @@ namespace SFStudio.ScriptConsole
 
 			inputField.text = null;
 			inputField.Select();
+			inputField.ActivateInputField();
 		}
+
+		[NonSerialized] public int a;
 
 		Text GetCell(int index)
 		{
@@ -166,5 +171,8 @@ namespace SFStudio.ScriptConsole
 
 			return instance;
 		}
+		
+		// @todo function
+		// select previous method by keyboard arrow
 	}
 }
