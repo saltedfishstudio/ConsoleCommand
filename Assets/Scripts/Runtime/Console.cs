@@ -64,17 +64,17 @@ namespace SFStudio.ScriptConsole
 		void OnValueChanged(string input)
 		{
 			MethodInfo[] filtered;
-			string methodNames = input.Split(' ').FirstOrDefault();
+			string methodName = input.Split(' ').FirstOrDefault();
 
-			if (string.IsNullOrEmpty(methodNames))
+			if (string.IsNullOrEmpty(methodName))
 			{
 				filtered = new MethodInfo[0];
 			}
 			else
 			{
 				filtered = methods.Values
-					.Where(e => e.Name.ToLower().Contains(methodNames.ToLower()))
-					.OrderBy(e => e.Name).ToArray();
+					.Where(e => e.Name.ToLower().Contains(methodName.ToLower()))
+					.OrderBy(e => e, new MethodComparer(methodName)).ToArray();
 			}
 
 			int count = filtered.Length;

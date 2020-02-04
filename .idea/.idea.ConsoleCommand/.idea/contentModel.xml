@@ -9,6 +9,7 @@
             <e p="Console.cs" t="Include" />
             <e p="ConsoleCommand.cs" t="Include" />
             <e p="InternalClass.cs" t="Include" />
+            <e p="MethodComparer.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PublicClass.cs" t="Include" />
             <e p="ReflectionRunner.cs" t="Include" />
