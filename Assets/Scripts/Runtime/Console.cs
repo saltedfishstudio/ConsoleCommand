@@ -14,11 +14,15 @@ namespace SFStudio.ScriptConsole
 		[SerializeField] Text cellPrefab = default;
 		[SerializeField] RectTransform root = default;
 
+		[SerializeField] KeyCode activationKey = KeyCode.BackQuote;
+		[SerializeField] Canvas canvas = default;
+		
 		readonly List<Text> cells = new List<Text>();
 		readonly Dictionary<string, MethodInfo> methods = new Dictionary<string, MethodInfo>();
 		readonly Dictionary<string, Type> methodOwnerMap = new Dictionary<string, Type>();
 
 		MethodInfo selected = default;
+		bool activated = default;
 		
 		void Awake()
 		{
@@ -42,10 +46,23 @@ namespace SFStudio.ScriptConsole
 			inputField.onValueChanged.AddListener(OnValueChanged);
 			inputField.onEndEdit.AddListener(OnEndEdit);
 			cellPrefab.gameObject.SetActive(false);
+			
+			OnActivationChanged();
 		}
 
 		void Update()
 		{
+			if (Input.GetKeyDown(activationKey))
+			{
+				activated = !activated;
+				OnActivationChanged();
+			}
+			
+			if (!activated)
+			{
+				return;
+			}
+			
 			if (inputField.isFocused)
 			{
 				if (Input.GetKeyDown(KeyCode.Tab))
@@ -59,6 +76,11 @@ namespace SFStudio.ScriptConsole
 					}
 				}
 			}
+		}
+
+		void OnActivationChanged()
+		{
+			canvas.enabled = activated;
 		}
 
 		void OnValueChanged(string input)
