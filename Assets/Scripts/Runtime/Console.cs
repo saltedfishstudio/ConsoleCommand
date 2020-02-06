@@ -9,13 +9,15 @@ namespace SFStudio.ScriptConsole
 {
 	public class Console : MonoBehaviour
 	{
-		[SerializeField] string m_namespace = "Console.Command";
+		[Header("Component")]
 		[SerializeField] InputField inputField = default;
 		[SerializeField] Text cellPrefab = default;
 		[SerializeField] RectTransform root = default;
-
-		[SerializeField] KeyCode activationKey = KeyCode.BackQuote;
 		[SerializeField] Canvas canvas = default;
+
+		[Header("Setting")]
+		[SerializeField] string m_namespace = "Console.Command";
+		[SerializeField] KeyCode activationKey = KeyCode.BackQuote;
 		
 		readonly List<Text> cells = new List<Text>();
 		readonly Dictionary<string, MethodInfo> methods = new Dictionary<string, MethodInfo>();
